@@ -1,0 +1,7 @@
+<h1>Template Angular9 + A-Material + Rxjs + RESTApi Layer</h1>
+<button mat-raised-button color="warn" (click)="login()">
+	<mat-icon aria-hidden="false" aria-label="Login">person</mat-icon>
+	Request Test
+</button>
+<h3 *ngIf="_loading">loading ...</h3>
+<h3 *ngIf="_loading === false">Test Ok! UserId: {{_id}}</h3>

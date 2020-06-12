@@ -1,0 +1,34 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2018",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+				"paths": {
+		    "@modules/*": ["modules/*"],
+		    "@auth/*": ["modules/auth/*"],
+						"@shared/*": ["modules/shared/*"],
+		    "@tcp-core/*": ["modules/shared/core/*"],
+		    "@env/*": ["environments/*"],
+						"@tests/*": ["tests/modules/*"]
+		  }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+				"strictInjectionParameters": true
+  }
+}
